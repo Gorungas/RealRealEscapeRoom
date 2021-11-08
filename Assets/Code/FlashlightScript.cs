@@ -4,16 +4,14 @@ using UnityEngine;
 
 public class FlashlightScript : MonoBehaviour
 {
-    RaycastHit hit;
-    // Start is called before the first frame update
-    void Start()
+    public LayerMask enemyLayer;
+    private void FixedUpdate()
     {
-        
-    }
+        RaycastHit hit;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 10.0f, enemyLayer)) {
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
+            Debug.Log("Did Hit");
+        }
     }
 }
