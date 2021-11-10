@@ -24,7 +24,7 @@ public class DoorHinge : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("hand"))
         {
-            rb.isKinematic = false;
+            //rb.isKinematic = false;
         }
     }
 
@@ -32,7 +32,7 @@ public class DoorHinge : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("hand"))
         {
-            rb.isKinematic = true;
+            //rb.isKinematic = true;
         }
     }
 }
