@@ -7,7 +7,7 @@ public class PlayerFollow : MonoBehaviour
     public Transform PlayerPos;
     public float speed;
     public float followThresh;
-    public bool canMove = false;
+    public bool canMove = true;
 
     void Update()
     {
