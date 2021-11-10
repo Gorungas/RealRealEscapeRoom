@@ -15,8 +15,8 @@ TagManager:
   - Grabbable
   - IgnorePlayer
   - EnemyLayer
-  - 
-  - 
+  - door
+  - Wall
   - 
   - 
   - 

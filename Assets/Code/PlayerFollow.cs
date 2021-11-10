@@ -8,12 +8,27 @@ public class PlayerFollow : MonoBehaviour
     public float speed;
     public float followThresh;
 
+    public bool canMove = false;
+
     void Update()
     {
-       if (Vector3.Distance(this.transform.position, PlayerPos.position) <= followThresh)
-       {
-            transform.position = Vector3.MoveTowards(this.transform.position, PlayerPos.position, speed * Time.deltaTime);
-            transform.LookAt(PlayerPos.position);
+        //indicate if it is being looked at by player
+        if (true)
+        {
+            canMove = true;
+        }
+        else
+        {
+
+        }
+
+        if (canMove)
+        {
+            if (Vector3.Distance(this.transform.position, PlayerPos.position) <= followThresh)
+            {
+                transform.position = Vector3.MoveTowards(this.transform.position, PlayerPos.position, speed * Time.deltaTime);
+                transform.LookAt(PlayerPos.position);
+            }
         }
     }
 }

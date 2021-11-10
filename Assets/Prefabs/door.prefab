@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5743313429638623583}
   - component: {fileID: 5743313429638623582}
   - component: {fileID: 5743313429638623585}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 4200094790094361109}
   m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
   m_LocalPosition: {x: -190.388, y: -16.937, z: -41.754}
-  m_LocalScale: {x: 30, y: -203.125, z: 415.7875}
+  m_LocalScale: {x: 119.999954, y: -1193.3997, z: 1569.0093}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -126,7 +126,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.0031, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -191.01768, y: -16.937, z: -41.754}
+  m_ConnectedAnchor: {x: -196.46211, y: -16.937, z: -37.809}
   m_UseSpring: 0
   m_Spring:
     spring: 0
