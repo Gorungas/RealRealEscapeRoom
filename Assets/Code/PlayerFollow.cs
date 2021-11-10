@@ -7,20 +7,11 @@ public class PlayerFollow : MonoBehaviour
     public Transform PlayerPos;
     public float speed;
     public float followThresh;
-
     public bool canMove = false;
 
     void Update()
     {
         //indicate if it is being looked at by player
-        if (true)
-        {
-            canMove = true;
-        }
-        else
-        {
-
-        }
 
         if (canMove)
         {
