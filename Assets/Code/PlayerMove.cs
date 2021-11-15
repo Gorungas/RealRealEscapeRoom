@@ -10,6 +10,7 @@ public class PlayerMove : MonoBehaviour
     public XRNode handRole = XRNode.LeftHand;
     Rigidbody _rigidbody;
     Transform camTrans;
+    public float currentSpeed;
     void Start()
     {
         camTrans = Camera.main.transform;
@@ -22,5 +23,6 @@ public class PlayerMove : MonoBehaviour
         Vector3 moveDir = camTrans.forward * direction.y + camTrans.right * direction.x;
         moveDir.y = _rigidbody.velocity.y;
         _rigidbody.velocity = moveDir * speed;
+        currentSpeed = _rigidbody.velocity.magnitude;
     }
 }
