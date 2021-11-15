@@ -22,4 +22,21 @@ public class PlayerFollow : MonoBehaviour
             }
         }
     }
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("light"))
+        {
+            canMove = false;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("true"))
+        {
+            canMove = false;
+        }
+    }
 }

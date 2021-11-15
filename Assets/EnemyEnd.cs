@@ -8,7 +8,7 @@ public class EnemyEnd : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -18,9 +18,9 @@ public class EnemyEnd : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("enemy"))
         {
-            SceneManager.LoadScene("GameOver");
+            SceneManager.LoadScene(1);
         }
     }
 }
